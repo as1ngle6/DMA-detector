@@ -65,7 +65,6 @@
 
         int main() {
             // 目标进程的名字，例如游戏进程
-            std::wstring gameProcessName = L"XXX.exe"; // 读取游戏.exe文件名
             DWORD gameProcessID = FindProcessID(gameProcessName);
             if (gameProcessID == 0) {
                 std::cerr << "Could not find the game process." << std::endl;
